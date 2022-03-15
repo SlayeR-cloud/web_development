@@ -9,6 +9,18 @@
         <title>New Webpage</title>
     </head>
     <body>
+        <script>
+            /**
+             * @param String name
+             * @return String
+             */
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+        </script>
         <h1>Some Title Unknown</h1>
         <table>
             <tr>
@@ -18,6 +30,38 @@
                 <td>Phone</td>
                 <td>User</td>
                 <td>Password</td>
+            </tr>
+            <tr>
+                <td>
+                    <script>
+                        getParameterByName("fname");
+                    </script>
+                </td>
+                <td>
+                    <script>
+                        getParameterByName("lname");
+                    </script>
+                </td>
+                <td>
+                    <script>
+                        getParameterByName("address");
+                    </script>
+                </td>
+                <td>
+                    <script>
+                        getParameterByName("lname");
+                    </script>
+                </td>
+                <td>
+                    <script>
+                        getParameterByName("user");
+                    </script>
+                </td>
+                <td>
+                    <script>
+                        getParameterByName("password");
+                    </script>
+                </td>
             </tr>
         </table>
         <p>
