@@ -1,0 +1,21 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: darkgray;
+}
+
+body {
+    background-color: #0d1117;
+}
+
+h1 {
+	font-family: 'Sanchez', "Ink Free", sans-serif;
+	color: #00FF00;
+}
+
+tr {
+    border: 1px solid;
+	width: 250px;
+	padding: 25px;
+	margin: 25px;
+}
