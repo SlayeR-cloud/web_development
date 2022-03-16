@@ -1,17 +1,66 @@
+* {
+    color: darkgray;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+}
+
 body {
     background-color: #0d1117;
 }
 
-h1 {
-	font-family: 'Fredoka', sans-serif;
-	color: #00FF00;
+input {
+    color: black;
+    font-weight: bold;
 }
 
-/*
-tr {
-    border: 1px solid;
-	width: 250px;
-	padding: 25px;
-	margin: 25px;
+label {
+    display: inline-block;
+    text-align: justify;
+    width: 200px;
+    padding: 3px;
 }
-*/
+
+table {
+    text-align: center;
+    border: 1px solid white;
+	padding: 10px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid white;
+	padding: 10px;
+	margin: 15px;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+	color: #f3f3f3;
+    text-align: center;
+    font-family: 'Sanchez', "Ink Free", sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Fredoka', sans-serif;
+	color: #f3f3f3;
+    text-align: center;
+}
+
+#tr1 {
+    background-color: #c9d1d9;
+    font-weight: bold;
+}
+
+.td1 {
+    color: black;
+}
