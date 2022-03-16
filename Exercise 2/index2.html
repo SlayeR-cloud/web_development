@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/Exercise 2/style.css">
-        <title>New Webpage</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Form User</title>
     </head>
     <body>
         <script>
@@ -21,49 +22,53 @@
                 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
             }
         </script>
-        <h1>Some Title Unknown</h1>
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>Last Name</td>
-                <td>Address</td>
-                <td>Phone</td>
-                <td>User</td>
-                <td>Password</td>
-            </tr>
-            <tr>
-                <td>
-                    <script>
-                        getParameterByName("fname");
-                    </script>
-                </td>
-                <td>
-                    <script>
-                        getParameterByName("lname");
-                    </script>
-                </td>
-                <td>
-                    <script>
-                        getParameterByName("address");
-                    </script>
-                </td>
-                <td>
-                    <script>
-                        getParameterByName("lname");
-                    </script>
-                </td>
-                <td>
-                    <script>
-                        getParameterByName("user");
-                    </script>
-                </td>
-                <td>
-                    <script>
-                        getParameterByName("password");
-                    </script>
-                </td>
-            </tr>
-        </table>
+        <h1>Here's your data</h1>
+        <div>
+            <div class="container">
+                <table>
+                    <tr id="tr1">
+                        <td class="td1">Name</td>
+                        <td class="td1">Last Name</td>
+                        <td class="td1">Address</td>
+                        <td class="td1">Phone</td>
+                        <td class="td1">User</td>
+                        <td class="td1">Password</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <script>
+                                document.write(getParameterByName("fname"));
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                document.write(getParameterByName("lname"));
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                document.write(getParameterByName("address"));
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                document.write(getParameterByName("lname"));
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                document.write(getParameterByName("user"));
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                document.write(getParameterByName("password"));
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             Earum aspernatur nisi placeat consequuntur ut ipsum, minima 
