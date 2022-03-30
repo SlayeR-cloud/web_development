@@ -62,6 +62,7 @@ input {
 #input_button:hover{
     border: 3px solid  rgb(62, 228, 21);
     color: rgb(62, 228, 21);
+	cursor: pointer;
 }
 
 #delete_button {
@@ -74,4 +75,5 @@ input {
 
 #delete_button:hover{
     background-color: darkred;
+	cursor: pointer;
 }
